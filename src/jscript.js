@@ -24,10 +24,3 @@ function showSlides(n) {
 	slides[slideIndex-1].style.display = "block";
 	dots[slideIndex-1].className += " active";
 }
-
-var elements = document.getElementsByClassName("niki");
-var element=elements[0];
-var image=element.getElementById("drivers");
-element.getElementById("drivers").onclick=function(){
-	element.getElementById("drivers").src="rsz_rip.jpg";
-}
