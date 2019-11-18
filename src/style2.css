@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+
+:root {
+	font-size: 16px;
+}
+
+section {
+	font-family: 'Quicksand';
+	margin: 0 auto;
+	max-width: 700px;
+	width: 100%;
+}
+
+strong { font-weight: bold; }
+
+h1 {
+	font-size: 3rem;
+	margin: 1rem;
+	font-weight: bold;
+}
+
+body{
+	background-color:black;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+	
+figure {
+	margin: 1rem;
+	position: relative;
+}
+		
+figcaption {
+			background: rgba(250,250,250, .8);
+			bottom: 0;
+			box-sizing: border-box;
+			position: absolute;
+			width: 100%;
+			padding: 1rem;
+			-webkit-transition: max-height 0.3s ease-out;
+}
+		
+p { margin-top: .5rem; }
+	
+	img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+	}
+
+@media screen and (min-width: 701px) {
+	a {
+		text-decoration: none;
+	}
+	
+	h1 {
+		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #fff;
+	}
+	
+	h4 {
+		font-family: CorporateSDemi, Helvetica, Arial, sans-serif;
+		color: #fff;
+		font-size:1.3em;
+	}
+	
+	h2 {
+		font-family: CorporateSDemi, Helvetica, Arial, sans-serif;
+		color: #000;
+		margin-left:75px;
+	}
+	
+	p {
+		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #fff;
+		margin-left:10px;
+	}
+	
+	nav {
+		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		width:auto;
+		height:57px;
+		background:#000;
+		z-index:99;
+	}
+
+	ul {
+		background: #000;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		z-index:99;
+	}
+
+	li {
+		background: #000;
+		display: block;
+		float: left;
+		padding: 1rem;
+		position: relative;
+		text-decoration: none;
+		transition-duration: 0.5s;
+		font-size:1.3em;
+		z-index:99;
+	}
+	  
+	li a {
+		color: #fff;
+	}
+
+	li:hover, li:focus-within {
+		background: #0ca597;
+		cursor: pointer;
+	}
+	
+	li:hover a {
+		color:rgba(218,222,229,1);
+	}
+
+	li:focus-within a {
+		outline: none;
+	}
+
+	ul li ul {
+		background: rgba(218,222,229,1);
+		visibility: hidden;
+		opacity: 0;
+		min-width: 5rem;
+		position: absolute;
+		transition: all 0.5s ease;
+		margin-top: 1rem;
+		left: 0;
+		display: none;
+		z-index:99;
+	}
+
+	ul li:hover > ul, ul li:focus-within > ul, ul li ul:hover, ul li ul:focus {
+		visibility: visible;
+		opacity: 1;
+		display: block
+	}
+
+	ul li ul li {
+		clear: both;
+		width: 100%;
+		z-index:99;
+	}
+	
+	#logo {
+		position:absolute;
+		top:0px;
+		right:0px;
+		height:80px;
+	}
+	figure {
+		width: calc(50% - 2rem);
+		
+		figcaption { height: 50px; }
+	
+		&:hover {
+			figcaption {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				transition: height .5s ease-in;
+			}
+			
+			p {
+				opacity: 1;
+				-webkit-transition: opacity .5s ease-in .6s;
+				-moz-transition: opacity .5s ease-in .6s;
+				-ms-transition: opacity .5s ease-in .6s;
+				transition: opacity .5s ease-in .6s;
+			}
+		}
+	}
+	
+	p { opacity: 0; }
+}
+
+@media screen and (max-width: 700px) {
+	h1 {
+		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #fff;
+	}
+	
+	h4 {
+		font-family: CorporateSDemi, Helvetica, Arial, sans-serif;
+		color: #fff;
+		font-size:1.2em;
+	}
+	
+	h2 {
+		font-family: CorporateSDemi, Helvetica, Arial, sans-serif;
+		color: #000;
+		font-size:2em;
+		border-top:5px solid black;
+	}
+	
+	p {
+		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #fff;
+	}
+	
+	a {
+	  text-decoration: none;
+	}
+
+	nav {
+		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		width:auto;
+		height:131px;
+		background:#000;
+		z-index:99;
+	}
+
+	ul {
+		background: #000;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		z-index:99;
+	}
+
+	li {
+		background: #000;
+		display: block;
+		float: left;
+		padding: 1rem;
+		position: relative;
+		text-decoration: none;
+		transition-duration: 0.5s;
+		font-size:1.8em;
+		z-index:99;
+	}
+	  
+	li a {
+		color: #fff;
+	}
+
+	li:hover, li:focus-within {
+		background: #0ca597;
+		cursor: pointer;
+	}
+	
+	li:hover a {
+		color:rgba(218,222,229,1);
+	}
+
+	li:focus-within a {
+		outline: none;
+	}
+
+	ul li ul {
+		background: rgba(218,222,229,1);
+		visibility: hidden;
+		opacity: 0;
+		min-width: 5rem;
+		position: absolute;
+		transition: all 0.5s ease;
+		margin-top: 1rem;
+		left: 0;
+		display: none;
+		z-index:99;
+	}
+
+	ul li:hover > ul, ul li:focus-within > ul, ul li ul:hover, ul li ul:focus {
+		visibility: visible;
+		opacity: 1;
+		display: block
+	}
+
+	ul li ul li {
+		clear: both;
+		width: 100%;
+		z-index:99;
+	}
+	
+	#logo {
+		position:absolute;
+		top:0px;
+		right:0px;
+		height:110px;
+	}
+	figure { width: 100%; }
+	
+	p { opacity: 1; }
+	figcaption { height: auto; }
+}
