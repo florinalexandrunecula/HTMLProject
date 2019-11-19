@@ -4,7 +4,7 @@
 	}
 	
 	h1 {
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family:Helvetica, Arial, sans-serif;
 		color: #fff;
 		font-size: 2rem;
 		margin: 1rem;
@@ -12,25 +12,31 @@
 	}
 	
 	h4 {
-		font-family: CorporateSDemi, Helvetica, Arial, sans-serif;
+		font-family: Helvetica, Arial, sans-serif;
 		color: #fff;
 		font-size:1.3em;
 	}
 	
 	h2 {
-		font-family: CorporateSDemi, Helvetica, Arial, sans-serif;
+		font-family: Helvetica, Arial, sans-serif;
 		color: #000;
 		margin-left:75px;
 	}
 	
+	h3 {
+		font-family:Helvetica, Arial, sans-serif;
+		color:#fff;
+		font-size:1.7em;
+	}
+	
 	p {
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		color: #fff;
 		margin-left:10px;
 	}
 	
 	nav {
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: Helvetica, Arial, sans-serif;
 		width:auto;
 		height:58px;
 		background:#000;
@@ -121,7 +127,7 @@
 		position:absolute;
 		top:15px;
 		left:10px;
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: Helvetica, Arial, sans-serif;
 		color: #fff;
 		font-size:2em;
 		border-top:2px solid white;
@@ -175,7 +181,7 @@
 		bottom: 8px;
 		width: 100%;
 		text-align: center;
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		background:rgba(0,0,0,0.8);
 	}
 
@@ -257,16 +263,19 @@
 	strong { 
 		font-weight: bold; 
 	}
+	
 	.grid {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		width: 100%;
 	}
+	
 	figure {
 		margin: 1rem;
 		position: relative;
 	}
+	
 	figcaption {
 		visibility:hidden;
 		background: rgba(250,250,250, .8);
@@ -277,14 +286,48 @@
 		height:27%;
 		padding: 1rem;
 	}
+	
 	figure:hover > figcaption{
 		visibility:visible;
+	}
+	
+	table {
+		width: 25%;
+		margin-top:50px;
+	}
+	
+	table, th, td {
+		border: 1px solid white;
+		border-collapse: collapse;
+	}
+	
+	th, td {
+		padding: 5px;
+		text-align: left;
+		color:white;
+		font-size:1.5em;
+	}
+	
+	.column {
+		float: left;
+		width: 33.33%;
+	}
+
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	#partners {
+		width:90%;
+		height:auto;
 	}
 }
 
 @media only screen and (max-width: 1000px) {
 	h1 {
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		color: #fff;
 		font-size: 4em;
 		margin: 1rem;
@@ -293,20 +336,26 @@
 	}
 	
 	h4 {
-		font-family: CorporateSDemi, Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		color: #fff;
 		font-size:1.2em;
 	}
 	
 	h2 {
-		font-family: CorporateSDemi, Helvetica, Arial, sans-serif;
+		font-family: Helvetica, Arial, sans-serif;
 		color: #000;
 		font-size:2em;
 		border-top:5px solid black;
 	}
 	
+	h3 {
+		font-family:  Helvetica, Arial, sans-serif;
+		color:#fff;
+		font-size:3em;
+	}
+	
 	p {
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		color: #fff;
 	}
 	
@@ -315,7 +364,7 @@
 	}
 
 	nav {
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		width:auto;
 		height:131px;
 		background:#000;
@@ -408,7 +457,7 @@
 		position:absolute;
 		top:15px;
 		left:10px;
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: Helvetica, Arial, sans-serif;
 		color: #fff;
 		font-size:2em;
 		border-top:2px solid white;
@@ -462,7 +511,7 @@
 		bottom: 8px;
 		width: 100%;
 		text-align: center;
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		background:rgba(0,0,0,0.8);
 	}
 
@@ -548,27 +597,63 @@
 		font-weight: bold;
 		color:white;
 	}
+	
 	.grid {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		width: 100%;
 	}
+	
 	figure {
 		margin: 1rem;
 		position: relative;
 	}
+	
 	figcaption {
 		font-size:1.5em;
 		bottom: 0;
 		padding: 0rem;
 		color:white;
 	}
+	
+	table {
+		width: 100%;
+		margin-top:50px;
+	}
+	
+	table, th, td {
+		border: 1px solid white;
+		border-collapse: collapse;
+	}
+	
+	th, td {
+		padding: 5px;
+		text-align: left;
+		color:white;
+		font-size:2em;
+	}
+	
+	.column {
+		width: 100%;
+		margin-top:50px;
+	}
+
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	#partners {
+		width:90%;
+		height:auto;
+	}
 }	
 
 @media only screen and (max-width: 640px) {
 	h1 {
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: Helvetica, Arial, sans-serif;
 		color: #fff;
 		font-size: 4em;
 		margin: 1rem;
@@ -577,20 +662,26 @@
 	}
 	
 	h4 {
-		font-family: CorporateSDemi, Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		color: #fff;
 		font-size:1.2em;
 	}
 	
 	h2 {
-		font-family: CorporateSDemi, Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		color: #000;
 		font-size:2em;
 		border-top:5px solid black;
 	}
 	
+	h3 {
+		font-family: Helvetica, Arial, sans-serif;
+		color:#fff;
+		font-size:3em;
+	}
+	
 	p {
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		color: #fff;
 	}
 	
@@ -599,7 +690,7 @@
 	}
 
 	nav {
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		width:auto;
 		height:131px;
 		background:#000;
@@ -689,7 +780,7 @@
 		position:absolute;
 		top:15px;
 		left:10px;
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		color: #fff;
 		font-size:2em;
 		border-top:2px solid white;
@@ -743,7 +834,7 @@
 		bottom: 8px;
 		width: 100%;
 		text-align: center;
-		font-family: CorporateSRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family:  Helvetica, Arial, sans-serif;
 		background:rgba(0,0,0,0.8);
 	}
 
@@ -829,16 +920,19 @@
 		font-weight: bold;
 		color:white;
 	}
+	
 	.grid {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		width: 100%;
 	}
+	
 	figure {
 		margin: 1rem;
 		position: relative;
 	}
+	
 	figcaption {
 		font-size:1.5em;
 		bottom: 0;
@@ -846,4 +940,36 @@
 		color:white;
 	}
 	
+	table {
+		width: 100%;
+		margin-top:50px;
+	}
+	
+	table, th, td {
+		border: 1px solid white;
+		border-collapse: collapse;
+	}
+	
+	th, td {
+		padding: 5px;
+		text-align: left;
+		color:white;
+		font-size:2em;
+	}
+	
+	.column {
+		width: 100%;
+		margin-top:50px;
+	}
+
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	#partners {
+		width:90%;
+		height:auto;
+	}
 }	
