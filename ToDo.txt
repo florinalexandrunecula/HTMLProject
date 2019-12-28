@@ -1,0 +1,12 @@
+-metoda Math
+-metoda Date
+-metoda Array
+-metoda String
+-eveniment-proprietate(pageX,key,target, etc)
+-eveniment-metoda(preventDefault, stopPropagation)
+-addEventListener cu al 3-lea parametru =true
+-input(text, buton, radio)
+-localStorage
+-JSON parse
+-JSON stringify
+-parcurgere arbore DOM: parentElement, children

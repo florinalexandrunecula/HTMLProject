@@ -1,4 +1,10 @@
 @media only screen and (min-width: 1001px) {
+	#masinuta{
+		width:200px;
+		height:100px;
+		position:relative;
+	}
+	
 	a {
 		text-decoration: none;
 		color:#0ca597;

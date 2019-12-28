@@ -15,12 +15,23 @@ function showSlides(n) {
 	var dots = document.getElementsByClassName("dot");
 	if (n > slides.length) {slideIndex = 1}
 	if (n < 1) {slideIndex = slides.length}
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
+	slides[0].style.display="none";
+	var cs=window.getComputedStyle(slides[0]);
+	for (i = 1; i < slides.length; i++) {
+		slides[i].style.display = cs.getPropertyValue("display");
 	}
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
+	var el;
+	for (el of dots) {
+		el.className = el.className.replace(" active", "");
 	}
 	slides[slideIndex-1].style.display = "block";
-	dots[slideIndex-1].className += " active";
+	dots[slideIndex-1].classList.add("active");
+}
+
+var img=document.getElementById("masinuta");
+img.style.left="0px";
+let x=15;
+img.onclick=function(){
+	var t=setInterval(function(y){if(parseInt(img.style.left)>1350) {img.style.left="0px";clearInterval(t);};img.style.left=parseInt(img.style.left)+y+"px";},100,x);
+	x=x+20;
 }
