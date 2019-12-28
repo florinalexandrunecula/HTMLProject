@@ -24,6 +24,16 @@
 		margin-left:75px;
 	}
 	
+	#sticky_header{
+		font-family: Helvetica, Arial, sans-serif;
+		margin-left:0px;
+		position: sticky;
+		color:#fff;
+		top: 0;
+		background-color: black;
+		z-index:99;
+	}
+	
 	h3 {
 		font-family:Helvetica, Arial, sans-serif;
 		color:#fff;
@@ -256,6 +266,10 @@
 		object-fit: cover;
 	}
 	
+	#galerie:hover{
+		transform: scaleY(1.1) scaleX(1.1);
+	}
+	
 	#paragrafgal{
 		font-size:1em;
 		color:black;
@@ -309,6 +323,10 @@
 		font-size:1.5em;
 	}
 	
+	tr:nth-child(even) {
+		background-color: #737373;
+	}
+
 	.column {
 		float: left;
 		width: 33.33%;
