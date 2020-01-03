@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Shop - Mercedes-AMG F1</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Mercedes F1 Team">
+		<meta name="keywords" content="mercedes,f1,formula 1,hamilton">
+		<meta name="author" content="Necula Florin-Alexandru">
+		<link rel="stylesheet" type="text/css" href="style.css">	
+		<base href = "./" />
+	</head>
+	<body>
+		<header>
+			<nav role="navigation">
+					<picture>
+						<source media="(max-width: 1000px)" srcset="mercedes_logo2.png">
+						<img id="logo" src="mercedes_logo1.png" alt="Mercedes AMG Petronas Logo">
+					</picture>
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#">Gallery</a>
+							<ul class="dropdown">
+								<li><a href="team.html">Team</a></li>
+								<li><a href="cars.html">Cars</a></li>
+							</ul>
+						</li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+			</nav>
+		</header>
+		<h3>Objects and Prices</h3>
+		<p>T-shirt - 40.99 Euros</p>
+		<p>Long Sleeve T-shirt - 65.99 Euros</p>
+		<p>Cap - 40.99 Euros</p>
+		<div id="shop">
+			<input id="box" type="text" name="element"> What object you want? <br>
+			<input type="radio" name="color" value="Green"> Green<br>
+			<input type="radio" name="color" value="Silver"> Silver<br>
+			<input type="radio" name="color" value="Black"> Black<br>
+			<input type="checkbox" name="picker" value="color"> Driver name printed on it?<br>
+			<input id="add" type="button" value="Add object"> <br>
+			<input id="submit" type="button" value="Place order"> <br>
+		</div>
+		<p>Order review:</p>
+		<div id="order">
+		</div>
+		<p id="total">Total is: </p>
+		<script src="script3.js"></script>
+	</body>
+</html>

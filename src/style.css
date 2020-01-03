@@ -5,6 +5,10 @@
 		position:relative;
 	}
 	
+	#shop {
+		background-color:white;
+	}
+	
 	a {
 		text-decoration: none;
 		color:#0ca597;
@@ -37,7 +41,7 @@
 		color:#fff;
 		top: 0;
 		background-color: black;
-		z-index:99;
+		z-index:90;
 	}
 	
 	h3 {
@@ -57,7 +61,7 @@
 		width:auto;
 		height:58px;
 		background:#000;
-		z-index:99;
+		z-index:98;
 	}
 
 	ul {
