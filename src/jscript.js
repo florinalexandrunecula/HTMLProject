@@ -57,7 +57,7 @@ h4.addEventListener("click",function(){alert("A team come true!")},false);
 //}
 var article=document.getElementsByTagName("article");
 var art=article[0];
-art.addEventListener("click",function(){alert("Congratulations!")},false);
+art.addEventListener("click",function(){alert("Congratulations!")},true);
 //art.onclick=function(){
 //	alert("Congratulations!");
 //}
