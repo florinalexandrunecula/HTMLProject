@@ -33,14 +33,19 @@ window.onload=function(){
 		p.innerHTML=written;
 		div.appendChild(p);
 	}
-	cutie.addEventListener("keyup",function(event){
-		if (event.keyCode === 13)
+	//cutie.addEventListener("keyup",function(event){
+	//	if (event.keyCode === 13)
+	//		addbutton.click();
+	//});
+	cutie.onkeyup=function(event){
+		if(event.keyCode==13)
 			addbutton.click();
-	});
+	}
 	totalbutton.onclick=function(){
 		var written="Order placed on ";
 		var d = new Date();
-		written+=d.toString();
+		//written+=d.toString();
+		written+=d.getFullYear()+" "+(d.getMonth()+1)+" "+d.getDate();
 		var p=document.createElement("p");
 		p.innerHTML=written;
 		document.body.appendChild(p);
