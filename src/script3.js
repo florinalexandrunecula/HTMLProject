@@ -45,7 +45,8 @@ window.onload=function(){
 		var written="Order placed on ";
 		var d = new Date();
 		//written+=d.toString();
-		written+=d.getFullYear()+" "+(d.getMonth()+1)+" "+d.getDate();
+		//written+=d.getFullYear()+" "+(d.getMonth()+1)+" "+d.getDate();
+		written+=d.getDate()+"."+(d.getMonth()+1)+"."+d.getFullYear();
 		var p=document.createElement("p");
 		p.innerHTML=written;
 		document.body.appendChild(p);
