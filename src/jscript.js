@@ -1,4 +1,3 @@
-localStorage.clear()
 if (JSON.parse(localStorage.getItem("json")) == null) {
 	var person = prompt("Please enter your name", "Your Name Here");
 	var surname= prompt("Please enter your surname","Your Surname Here");
@@ -8,7 +7,7 @@ if (JSON.parse(localStorage.getItem("json")) == null) {
 else{
 	var json=localStorage.getItem("json");
 	var ojs=JSON.parse(json);
-	alert("Hello "+ojs.nume+" "+ojs.surname);
+	alert("Hello "+ojs.nume+" "+ojs.prenume);
 }
 
 var slideIndex = 1;
