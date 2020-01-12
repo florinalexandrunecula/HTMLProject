@@ -1,12 +1,14 @@
-if (JSON.parse(localStorage.getItem("json")).nume == null) {
+localStorage.clear()
+if (JSON.parse(localStorage.getItem("json")) == null) {
 	var person = prompt("Please enter your name", "Your Name Here");
-	localStorage.setItem("json", JSON.stringify({nume:person}));
-	alert("Hello "+person);
+	var surname= prompt("Please enter your surname","Your Surname Here");
+	localStorage.setItem("json", JSON.stringify({nume:person,prenume:surname}));
+	alert("Hello "+person+" "+surname);
 }
 else{
 	var json=localStorage.getItem("json");
 	var ojs=JSON.parse(json);
-	alert("Hello "+ojs.nume);
+	alert("Hello "+ojs.nume+" "+ojs.surname);
 }
 
 var slideIndex = 1;
@@ -50,7 +52,7 @@ img.onclick=function(){
 
 var header=document.getElementsByTagName("h4");
 var h4=header[0];
-h4.addEventListener("click",function(){alert("A team come true!")},false);
+h4.addEventListener("click",function(){alert("A team come true!")},true);
 //h4.onclick=function(event){
 //	alert("A TEAM COME TRUE");
 //	event.stopPropagation();
