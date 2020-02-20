@@ -45,7 +45,7 @@ window.onload=function(){
 	}
 	totalbutton.onclick=function(){
 		var totaltxt=document.getElementById("total").innerHTML;
-		location.href = "http://localhost:10001" + "?total=" + totaltxt;
+		location.href = "http://localhost:8000" + "?total=" + totaltxt;
 		//var written="Order placed on ";
 		//var d = new Date();
 		//written+=d.getDate()+"."+(d.getMonth()+1)+"."+d.getFullYear();
